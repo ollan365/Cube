@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5100244822137463363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5100244822137463365}
+  - component: {fileID: 5100244822137463364}
+  - component: {fileID: 5100244822137463366}
+  m_Layer: 0
+  m_Name: RubikCubeInitializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5100244822137463365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100244822137463363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5100244822137463364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100244822137463363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff37d40e76f91f34cb748c4b658693ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rubikCubePrefab: {fileID: 7526513965415888479, guid: 5699540ba6f1b5442937444c30a136e2,
+    type: 3}
+  _dimensions: 3
+  _cubletPrefab: {fileID: 851049134473544261, guid: 715496ce602429647a243205ba824ea4,
+    type: 3}
+  hideInvisibleSides: 1
+  _maxHistorySize: 50
+  _shuffleOnStart: 1
+  _shuffleCount: 20
+  _shuffleSpeed: 5
+  _allowRespawning: 1
+  _minMaxCubeSize: {x: 2, y: 9}
+  _zoomFactorPerUnit: 1.5
+  _cameraMouseOrbit: {fileID: 0}
+  _axisDisplay: {fileID: 0}
+  _debugText: {fileID: 0}
+  OnNewCubeBeforeInitialize:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnNewCubeAfterInitialize:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentCubeBeforeDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentCubeAfterDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCubeChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCubeSolved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5100244822137463364}
+        m_MethodName: SetDiscRotationEnabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &5100244822137463366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100244822137463363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc42d34f37bbd042914f1c5b9445e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteText: The Rubik Cube Initializer is an example script of how you can spawn and
+    manage your rubik cube.
+  noteType: 0

@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4984317733517745701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4984317733517745707}
+  - component: {fileID: 7045740966987729517}
+  - component: {fileID: 7526513965415888479}
+  - component: {fileID: 4984317733517745700}
+  - component: {fileID: 4984317733517745703}
+  - component: {fileID: 8391424976255519269}
+  m_Layer: 0
+  m_Name: RubikCube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4984317733517745707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4984317733517745701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7045740966987729517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4984317733517745701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7526513965415888479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4984317733517745701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9919d4fd2baae9e449afd544c04deb7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4984317733517745700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4984317733517745701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cae1d61e9bd2014eb288e93cf60cb91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dragRotateEnabled: 1
+  _discRotationDragThreshold: 0.5
+  _scrollRotateEnabled: 1
+  _undoEnabled: 1
+  _discRotationSpeed: 3
+  _undoDiscRotationSpeed: 3
+  _debugText: {fileID: 0}
+  _showDebugInfo: 1
+--- !u!114 &4984317733517745703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4984317733517745701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e764d4615b7fc1408522f852479edd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _easingSpeed: 10
+  _dragDistanceToRotate: 100
+--- !u!114 &8391424976255519269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4984317733517745701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc42d34f37bbd042914f1c5b9445e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteText: 'The rubik cube has three components:
+
+    a) Rubik Cube which implements the creation of the cublets, rotation of the discs
+    and checking if the cube is solved
+
+    b) Rubik Cube Initializer which initializes the rubik cube with specific dimensions
+    and an optional shuffle on start.
+
+    c) DiscRotator which interpretes the user actions and converts them into actions
+    on the rubikcube
+
+    d) CubeRotator interprets swipe movements to rotate the whole cube itself in 90
+    degree increments.'
+  noteType: 0
